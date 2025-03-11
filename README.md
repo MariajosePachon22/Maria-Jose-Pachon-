@@ -1,19 +1,25 @@
 INTRODUCCIÓN
 Este proyecto tiene como propósito calcular el daño final de una bala en función del material con el que choca. Dependiendo del tipo de material (Madera, Metal o Concreto), el daño sufrido por la bala será diferente y tendrá una reducción de porcentajes diferentes. El programa está disponible en dos versiones: una en Python y otra en C++.
+
 INSTALACIÓN
+
 Instalación de Python
 1. Asegúrate de tener Python instalado en tu sistema. Puedes descargarlo desde la página oficial de este mismo, o usar visual studio code, el que te permitirá usar diferentes lenguajes, pero para este caso desde el mismo, visual studio descargas Python y sus extensiones.
 2. Una vez instalado, abre una terminal con la tecla F1(en el caso de visual studio code) y verifica que Python esté correctamente instalado con el siguiente comando:
 Python --version, que más allá de mostrarte que se encuentra instalado te dirá en que versión se encuentra
+
 Instalación de C++
 1.	Si deseas ejecutar el código en C++, puedes usar también visual studio code, descargando compilador de c++ en la misma aplicación y después de esto descargas MinGW, a lo que siguiendo las instrucciones te quedara listo para poder usarlo.
-1.	Verifica que tienes un compilador de C++ en tu sistema usando el siguiente comando en la terminal 
-g++ o g++ --version 
+2.	Verifica que tienes un compilador de C++ en tu sistema usando el siguiente comando en la terminal 
+g++ o g++ --version
+
 GUIA DE USO
+
 Usar el programa en Python
 1.	Guarda el archivo en la ruta que desees preferiblemente crea una carpeta.
 2.	Abre una terminal, en el caso de visual studio code con la tecla F1, que te llevara a la ruta donde guardaste el código y en la consola se ejecutara todo.
 3.	Para el problema de la bala de COD el programa pedirá que ingreses el daño de la bala y el tipo de material (1 para Madera, 2 para Metal, 3 para Concreto). Luego, mostrará el daño final calculado según el material elegido.
+
 Usar el programa en C++
 1.	Guarda el archivo en la ruta que desees preferiblemente crea una carpeta.
 2.	Abre una terminal, en el caso de visual studio code con la tecla F1, que te llevara a la ruta donde guardaste el código y en la consola se ejecutara todo.
@@ -24,12 +30,14 @@ Estructura del Proyecto
 Este proyecto está compuesto por dos archivos principales:
 •	.py: Contiene el código en Python que calcula el daño final de la bala en función del material.
 •	.cpp: Contiene el código en C++ con la misma funcionalidad que el código Python.
+
 Descripción del Código
 Python:
 1.	Se solicita al usuario ingresar el daño base y el tipo de material.
 2.	El programa calcula el daño final dependiendo del material (con diferentes porcentajes de reducción).
 3.	Si el tipo de material es inválido, se muestra un mensaje de error.
 4.	Si es válido se ejecuta el material seleccionado y se muestra el resultado final
+   
 C++:
 1.	Similar al código en Python, se solicita al usuario el daño base y el tipo de material.
 2.	Se utiliza un switch para aplicar los diferentes porcentajes de daño según el material.
@@ -98,11 +106,14 @@ int main() {
 
     return 0;
 }
+
 6. Errores Comunes
 •	Entrada incorrecta de material: Asegúrate de ingresar un número entre 1 y 3 para el material.
 •	Error en los cálculos: Si el resultado del daño final no es correcto, revisa que los valores ingresados sean válidos y que el programa esté recibiendo los datos en el formato adecuado.
+
 7. Contribuciones
 Si deseas contribuir al proyecto, se puede haciendo que el desarrollo del código sea más eficaz, también se pueden incluir más materiales, o también organizando mejor el código.
+
 8. Licencia
 Licenciado bajo Python Softwate Foundation License (PSFL).
 C++ no tiene una licencia pero las bibliotecas que usa si la tienen como, la Licencia Pública General GNU o la Licencia MIT.
